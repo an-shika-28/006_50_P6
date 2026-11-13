@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --mp-mocha: #5B4632;
+    --mp-mocha-deep: #2D261F;
+    --mp-mocha-dark: #231A12;
+    --mp-gold: #F4D9A0;
+    --mp-amber: #C8792C;
+    --mp-ivory: #F8F4EC;
+    --mp-ivory-alt: #EFE8DA;
+    --mp-taupe: #6E6255;
+    --mp-border: #D9CDBB;
+    --mp-red: #C83D3D;
+    --mp-green: #2E8057;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F8F4EC;
+    color: #2D261F;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-editorial {
+    font-family: "Cormorant Garamond", Georgia, serif;
+  }
+
+  .font-mono, .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .font-mono {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #C8792C;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
